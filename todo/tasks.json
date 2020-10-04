@@ -1,13 +1,15 @@
-{"Text":"new task in process now","Status":"in process","Start_date":"2020-09-07 15:13:37.798211419 +0300 MSK m=+0.001044245","End_date":""}
-{"Text":"new task in process now","Status":"in process","Start_date":"2020-09-07 15:13:48.182287744 +0300 MSK m=+0.001170522","End_date":""}
-{"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:01:43.528632504 +0300 MSK m=+0.000675386","End_date":""}
-{"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:05:01.11144258 +0300 MSK m=+0.001336956","End_date":""}
-{"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:05:08.193689417 +0300 MSK m=+0.001234003","End_date":""}
-{"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:05:16.827929568 +0300 MSK m=+0.001529256","End_date":""}
-{"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:05:47.554039739 +0300 MSK m=+0.001496214","End_date":""}
-{"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:06:04.207597848 +0300 MSK m=+0.000990857","End_date":""}
-{"Text":"любой рандомный текст вот так вот","Status":"in process","Start_date":"2020-09-29 21:07:45.219529115 +0300 MSK m=+0.001382231","End_date":""}
-{"Text":"любой рандомный текст вот так вот","Status":"in process","Start_date":"2020-09-29 21:07:46.728589746 +0300 MSK m=+0.001142051","End_date":""}
-{"Text":"и что ты мне СделаЕ'?","Status":"in process","Start_date":"2020-09-29 21:08:11.926267644 +0300 MSK m=+0.001020753","End_date":""}
-{"Text":"и что ты мне СделаЕъ?","Status":"in process","Start_date":"2020-09-29 21:08:29.424975687 +0300 MSK m=+0.001546108","End_date":""}
-{"Text":"и что ты мне СделаЕъ?","Status":"in process","Start_date":"2020-09-29 21:21:41.950021108 +0300 MSK m=+0.000738685","End_date":""}
+{"Id":0,"Text":"new task in process now","Status":"in process","Start_date":"2020-09-07 15:13:37.798211419 +0300 MSK m=+0.001044245","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"new task in process now","Status":"in process","Start_date":"2020-09-07 15:13:48.182287744 +0300 MSK m=+0.001170522","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:01:43.528632504 +0300 MSK m=+0.000675386","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:05:01.11144258 +0300 MSK m=+0.001336956","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:05:08.193689417 +0300 MSK m=+0.001234003","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:05:16.827929568 +0300 MSK m=+0.001529256","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"new task in process now","Status":"in process","Start_date":"2020-09-29 21:05:47.554039739 +0300 MSK m=+0.001496214","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"new task in process now","Status":"Success","Start_date":"2020-09-29 21:06:04.207597848 +0300 MSK m=+0.000990857","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"любой рандомный текст вот так вот","Status":"in process","Start_date":"2020-09-29 21:07:45.219529115 +0300 MSK m=+0.001382231","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"любой рандомный текст вот так вот","Status":"in process","Start_date":"2020-09-29 21:07:46.728589746 +0300 MSK m=+0.001142051","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"и что ты мне СделаЕ'?","Status":"in process","Start_date":"2020-09-29 21:08:11.926267644 +0300 MSK m=+0.001020753","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"и что ты мне СделаЕъ?","Status":"in process","Start_date":"2020-09-29 21:08:29.424975687 +0300 MSK m=+0.001546108","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"и что ты мне СделаЕъ?","Status":"in process","Start_date":"2020-09-29 21:21:41.950021108 +0300 MSK m=+0.000738685","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"новое время 1","Status":"in process","Start_date":"29-09-2020","End_date":"","WhatHelped":"","WhatMessedUp":""}
+{"Id":0,"Text":"new test test test very testing test","Status":"in process","Start_date":"30-09-2020","End_date":"","WhatHelped":"","WhatMessedUp":""}
