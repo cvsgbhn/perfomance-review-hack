@@ -7,6 +7,7 @@ import (
   "time"
   "encoding/json"
   "bufio"
+  "strconv"
 
   "github.com/urfave/cli/v2"
 )
@@ -28,9 +29,9 @@ type Task struct {
   WhatMessedUp string
 }
 
-func UpdateStatus()  {
+func ReadTaskFile() []Task {
   /*
-  ** First step: reading all tasks to a slice of Task structures
+  ** Reading all tasks to a slice of Task structures
   */
   file, _ := os.Open("todo/tasks.json")
   scanner := bufio.NewScanner(file)
@@ -46,18 +47,28 @@ func UpdateStatus()  {
     taskList = append(taskList, task)
     fmt.Println(task.Status)
   }
+  return taskList
+}
+
+func UpdateStatus(id int, err error)  {
+  
+  taskList := ReadTaskFile()
   fmt.Println("Count tasks:")
   fmt.Println(len(taskList))
 
   /*
+  ** First step: Find exact struct by given id
+  */
+
+  /*
   ** Second step: rewrite status in any structure
   */
-  taskList[7].Status = "Success"
+  taskList[id].Status = "Success"
 
   /*
   ** Third step: rewrite the whole file
   */
-  err := os.Remove("todo/tasks.json")
+  err = os.Remove("todo/tasks.json")
   if err != nil {
     return
   }
@@ -83,16 +94,14 @@ func ShowAllTasks() {
   // Open tasks.json in read-mode.
   file, _ := os.Open("todo/tasks.json")
   scanner := bufio.NewScanner(file)
-  num := 0
   for scanner.Scan() {
-    num++
     textFromFile := scanner.Text()
     task := Task{}
     err := json.Unmarshal([]byte(textFromFile), &task)
     if err != nil {
       fmt.Println(err)
     }
-    fmt.Println(num, "  ", task.Start_date, "  ", task.Text, "  ", task.Status)
+    fmt.Println(task.Id, "  ", task.Start_date, "  ", task.Text, "  ", task.Status)
 	}
 	if err := scanner.Err(); err != nil {
 		fmt.Fprintln(os.Stderr, "shouldn't see an error scanning a string")
@@ -102,7 +111,7 @@ func ShowAllTasks() {
 
 func SaveTask(taskText string) {
   var new_task Task
-  new_task.Id = 1
+  new_task.Id = CountId()
   new_task.Text = taskText
   new_task.Status = "in process"
   t := time.Now().Format("02-01-2006")
@@ -125,6 +134,12 @@ func SaveTask(taskText string) {
   }
 }
 
+func CountId() int {
+  taskList := ReadTaskFile()
+  lastId := taskList[len(taskList) - 1].Id
+  return (lastId + 1)
+}
+
 func main() {
   app := &cli.App{
     Name: "todo",
@@ -140,7 +155,7 @@ func main() {
       } else if name == "ls" {
         ShowAllTasks()
       } else if name == "us" {
-        UpdateStatus()
+        UpdateStatus(strconv.Atoi(c.Args().Get(2)))
       }else {
         fmt.Println("master of this dungeon counts 10")
       }
